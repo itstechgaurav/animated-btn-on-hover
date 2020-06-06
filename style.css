@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Righteous, cursive;
+}
+
+#outer-box {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10rem;
+}
+
+#btn {
+    font-size: 2rem;
+    color: dodgerblue;
+    padding: 1rem 1.5rem;
+    background-color: rgba(30, 143, 255, 0.151);
+    display: inline-block;
+    cursor: pointer;
+    width: 77px;
+    height: 45px;
+    user-select: none;
+    transition: all 1.5s .00005s cubic-bezier(0.18,0.18, 0.2, 1.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#bdr {
+    width: 77px;
+    height: 3px;
+    background-color: dodgerblue;
+    position: absolute;
+    top: calc(50% + calc(45px / 2));
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    transition: all 1.5s .009s cubic-bezier(0.18,0.18, 0.2, 1.6);
+
+}
+
+#btn:active {
+    margin-top: 1rem;
+}
